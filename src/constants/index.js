@@ -1,28 +1,23 @@
 import {
+  git,
+  web,
+  css,
+  mui,
+  html,
+  redux,
+  vuexy,
+  sneat,
+  nodejs,
+  nextjs,
   mobile,
+  materio,
   backend,
   creator,
-  web,
+  reactjs,
+  bootstrap,
+  clevision,
   javascript,
   typescript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +37,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "HTML & CSS Development",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React JS Development",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Admin Template Development",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Custom Web App Development",
     icon: creator,
   },
 ];
@@ -73,10 +68,6 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
@@ -85,86 +76,44 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "MUI",
+    icon: mui,
+  },
+  {
+    name: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "Next.js",
+    icon: nextjs,
+  },
+  {
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Senior React.js Developer",
+    company_name: "Clevision",
+    icon: clevision,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Oct 2018 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Utilizing React.js, Redux, Next.js, Mui, Bootstrap, and other relevant technologies, developing and maintaining the Admin templates.",
+      "Enhancing the functionality of the admin templates by implementing new features and ensuring timely updates.",
+      "Conducting rigorous testing to identify and resolve any issues or bugs.",
+      "Delivering exceptional customer support to users who have purchased the template.",
+      "Collaborating with cross-functional teams, such as design and product management, to ensure the admin templates align with the overall vision and objectives of the organization.",
     ],
   },
 ];
@@ -172,7 +121,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I recently had the opportunity to work with the React Admin Template developed by Ronak and I have to say, it's one of the best templates I've used so far.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -180,7 +129,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "Ronak has done an amazing job creating a template that is both elegant and easy to use. The attention to detail is impressive, and the layout is intuitive and user-friendly.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,7 +137,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "what really sets Ronak's React Admin Template apart is the level of support that he provides. Any time I had a question or needed help, he was always there to offer guidance and assistance.",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -198,67 +147,79 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Vuexy Admin Template",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I developed my company's first-ever admin template, called Vuexy. Within a year, it became our company's top-selling template. Vuexy initially started with CRA + Bootstrap and has since expanded to include three variants: CRA + Bootstrap, Vite + Bootstrap, and Nextjs + Mui & Nextjs + TS + Mui. It offers essential functionalities such as Authentication, ACL, and Customizable Layouts.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "bootstrap",
+        color: "text-violet-600",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
       {
         name: "nextjs",
+        color: "text-fuchsia-600",
+      },
+      {
+        name: "mui",
+        color: "text-rose-600	",
+      },
+    ],
+    image: vuexy,
+    link: "https://demos.pixinvent.com/vuexy-nextjs-admin-template/demo-1/dashboards/analytics/",
+  },
+  {
+    name: "Materio Admin Template",
+    description:
+      "Materio is the first admin template I developed using Next.js and TypeScript. This template comes equipped with features that enable you to create high-quality apps just the way you envision them. Additionally, Materio offers a variety of unique and useful tools, including fuzzy search, light, dark, semi-dark & bordered layout options, advanced cards, and charts. Materio also has useful apps like Chat, Email, Invoice, etc",
+    tags: [
+      {
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "nextjs",
+        color: "text-fuchsia-600",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "mui",
+        color: "text-rose-600	",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
       },
     ],
-    image: tripguide,
-    link: "https://github.com/",
+    image: materio,
+    link: "https://demos.themeselection.com/materio-mui-react-nextjs-admin-template/demo-1/dashboards/crm/",
+  },
+  {
+    name: "Sneat Admin Template",
+    description:
+      "Just like Vuexy and Materio, Sneat employs the same advanced tech stack and features. However, it distinguishes itself from the rest with its modern and sleek UI design, which gives it a fresh and clean look. The user interface of Sneat is not only aesthetically pleasing but also highly functional and user-friendly. With its intuitive design, Sneat makes it easy for users to navigate through the application, increasing efficiency.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "text-fuchsia-600",
+      },
+      {
+        name: "mui",
+        color: "text-rose-600	",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: sneat,
+    link: "https://demos.themeselection.com/sneat-mui-react-nextjs-admin-template/demo-1/dashboards/ecommerce/",
   },
 ];
 

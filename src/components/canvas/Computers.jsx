@@ -7,7 +7,6 @@ import CanvasLoader from "../Loader";
 
 const ComputerComponent = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
-
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -34,7 +33,7 @@ const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState();
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 600px)");
 
     setIsMobile(mediaQuery.matches);
 
