@@ -1,37 +1,22 @@
-import { BrowserRouter } from "react-router-dom";
+import React from "react";
+import Header from "./components/Header";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Links from "./components/Links";
+import Footer from "./components/Footer";
 
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
-
-const App = () => {
+const Portfolio = () => {
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
+    <div className="min-h-screen bg-black text-white dark">
+      <div className="max-w-2xl mx-auto px-6 py-20 md:py-28">
+        <Header />
         <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Projects />
+        <Links />
+        <Footer />
       </div>
-    </BrowserRouter>
+    </div>
   );
 };
 
-export default App;
+export default Portfolio;

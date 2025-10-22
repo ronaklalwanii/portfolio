@@ -1,79 +1,60 @@
-import { motion } from "framer-motion";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { experiences } from "../constants";
-import { textVariant } from "../utils/motion";
-
-import "react-vertical-timeline-component/style.min.css";
-
-const ExperienceCard = ({ experience }) => {
-  return (
-    <VerticalTimelineElement
-      date={experience.date}
-      iconStyle={{ background: experience.iconBg }}
-      contentStyle={{
-        color: "#fff",
-        background: "#1d1836",
-      }}
-      contentArrowStyle={{
-        borderRight: "7px solid #232631",
-      }}
-      icon={
-        <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className="object-contain"
-          />
-        </div>
-      }
-    >
-      <div>
-        <h3 className="text-white font-bold text-[24px]">{experience.title}</h3>
-        <p
-          className="text-[secondary] text-[16px] font-semibold"
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
-      </div>
-      <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => {
-          return (
-            <li
-              key={index}
-              className="text-white-100 text-[14px] pl-1 tracking-wider"
-            >
-              {point}
-            </li>
-          );
-        })}
-      </ul>
-    </VerticalTimelineElement>
-  );
-};
+import React from "react";
+import { experiences } from "../data/constants";
 
 const Experience = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I've done so far</p>
-        <h2 className={styles.sectionHeadText}>Work Experience.</h2>
-      </motion.div>
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {experiences.map((exp, index) => (
-            <ExperienceCard key={index} experience={exp} />
-          ))}
-        </VerticalTimeline>
+    <section className="mb-20">
+      <h2 className="text-2xl font-bold mb-8 flex items-center gap-2">
+        <span>👨🏻‍💻</span>
+        <span>Work</span>
+      </h2>
+
+      <div className="space-y-10">
+        {experiences.map((exp, index) => (
+          <div key={index} className="group">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-baseline gap-1 mb-3">
+              <h3 className="text-lg font-semibold group-hover:text-muted-foreground transition-colors duration-150">
+                {exp.role}
+              </h3>
+              <span className="text-sm text-muted-foreground whitespace-nowrap">
+                {exp.period}
+              </span>
+            </div>
+
+            <div className="text-base mb-3">{exp.company}</div>
+
+            <p className="text-sm mb-3 leading-relaxed">
+              {exp.description}
+            </p>
+
+            {exp.highlights && (
+              <ul className="space-y-2 mb-4">
+                {exp.highlights.map((highlight, i) => (
+                  <li
+                    key={i}
+                    className="text-sm leading-relaxed pl-4 relative before:content-['−'] before:absolute before:left-0 before:text-muted-foreground"
+                  >
+                    {highlight}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            <div className="flex flex-wrap gap-2">
+              {exp.tech.map((tech, i) => (
+                <span
+                  key={i}
+                  className="text-xs px-2.5 py-1 bg-secondary text-secondary-foreground rounded-md border"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(Experience, "experience");
+export default Experience;

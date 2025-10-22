@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronak Lalwani - Resume</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 30px;
+        }
+        .name {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            color: #111827;
+        }
+        .title {
+            font-size: 20px;
+            color: #6b7280;
+            margin: 0 0 16px 0;
+            font-weight: 500;
+        }
+        .bio {
+            font-size: 16px;
+            color: #4b5563;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            line-height: 1.7;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contact-item {
+            color: #4b5563;
+            text-decoration: none;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #111827;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 24px;
+            padding-left: 4px;
+        }
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .role-company {
+            flex: 1;
+        }
+        .role {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+            margin: 0 0 4px 0;
+        }
+        .company {
+            font-size: 15px;
+            color: #059669;
+            font-weight: 500;
+            margin: 0;
+        }
+        .period-location {
+            text-align: right;
+            font-size: 14px;
+            color: #6b7280;
+            white-space: nowrap;
+        }
+        .description {
+            font-size: 15px;
+            color: #374151;
+            margin: 8px 0 12px 0;
+            line-height: 1.6;
+        }
+        .highlights {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .highlight-item {
+            font-size: 14px;
+            color: #4b5563;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        .tech-tag {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .project-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #111827;
+            margin: 0 0 6px 0;
+        }
+        .project-description {
+            font-size: 15px;
+            color: #374151;
+            margin: 0 0 12px 0;
+            line-height: 1.6;
+        }
+        @media print {
+            body {
+                padding: 20px 15px;
+                font-size: 12px;
+            }
+            .name { font-size: 24px; }
+            .title { font-size: 16px; }
+            .bio { font-size: 14px; }
+            .section-title { font-size: 16px; }
+            .role { font-size: 14px; }
+            .company { font-size: 13px; }
+            .description { font-size: 13px; }
+            .highlight-item { font-size: 12px; }
+            .tech-tag { font-size: 11px; }
+            .contact-item { font-size: 12px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="name">Ronak Lalwani</h1>
+        <p class="title">Senior Frontend Engineer</p>
+        <p class="bio">Building scalable, high-performance React applications for healthcare, fintech, and SaaS. 7+ years specializing in performance optimization and modern architectures. Always shipping.</p>
+        <div class="contact-info">
+            <span class="contact-item">📧 ronaklalwani49@gmail.com</span>
+            <span class="contact-item">💼 LinkedIn: /in/ronak-lalwani/</span>
+            <span class="contact-item">📍 Ahmedabad, India</span>
+            <span class="contact-item">🌍 Open to Remote Worldwide</span>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="role-company">
+                    <h3 class="role">Senior Frontend Engineer</h3>
+                    <p class="company">York IE - Flooring Industry Marketplace</p>
+                </div>
+                <div class="period-location">
+                    <div>September 2024 – Present</div>
+                    <div>Remote</div>
+                </div>
+            </div>
+            <p class="description">Leading development of all-in-one flooring platform connecting online experiences to in-store showrooms, serving flooring retailers and manufacturers with comprehensive digital solutions.</p>
+            <ul class="highlights">
+                <li class="highlight-item">Redeveloped the architecture of the frontend to be more scalable and maintainable using latest react techniques and libraries</li>
+                <li class="highlight-item">Implemented a new testing framework using Playwright to test the application</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Playwright</span>
+                <span class="tech-tag">Tanstack Query</span>
+                <span class="tech-tag">Tailwind CSS</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="role-company">
+                    <h3 class="role">Senior Frontend Engineer</h3>
+                    <p class="company">York IE - AI Healthcare Technology Platform</p>
+                </div>
+                <div class="period-location">
+                    <div>March 2024 – September 2024</div>
+                    <div>Remote</div>
+                </div>
+            </div>
+            <p class="description">Led frontend development for AI-powered healthcare technology platform enabling intelligent medical case management and litigation support.</p>
+            <ul class="highlights">
+                <li class="highlight-item">Architecting React/TypeScript frontend enabling legal teams to manage medical cases with AI-generated chronologies, reducing case review time from 40 hours to 6 hours</li>
+                <li class="highlight-item">Implementing multimodal data visualization displaying medical records and AI-generated insights, improving case assessment efficiency by 65%</li>
+                <li class="highlight-item">Established component architecture patterns adopted across frontend team, reducing code duplication by 40%</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Tanstack Query</span>
+                <span class="tech-tag">Jira</span>
+                <span class="tech-tag">Gerrit</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="role-company">
+                    <h3 class="role">Senior Frontend Engineer</h3>
+                    <p class="company">York IE - AI Marketing Platform</p>
+                </div>
+                <div class="period-location">
+                    <div>April 2023 – February 2024</div>
+                    <div>Remote</div>
+                </div>
+            </div>
+            <p class="description">Led frontend development for AI-powered campaign management SaaS platform serving enterprise marketing teams.</p>
+            <ul class="highlights">
+                <li class="highlight-item">Architected scalable admin panel using React, TypeScript, and Redux handling 50,000+ marketing campaigns with real-time analytics</li>
+                <li class="highlight-item">Integrated multimodal AI capabilities generating dynamic charts and visual components, reducing campaign setup time by 45%</li>
+                <li class="highlight-item">Implemented comprehensive E2E testing with Cypress covering 150+ critical user flows, achieving 99.2% platform uptime</li>
+                <li class="highlight-item">Optimized application performance improving Lighthouse score from 68 to 92 and reducing initial load time by 52%</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Cypress</span>
+                <span class="tech-tag">Vite.js</span>
+                <span class="tech-tag">Tanstack Query</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="role-company">
+                    <h3 class="role">Senior Web Developer</h3>
+                    <p class="company">FitPeo - Healthcare Technology Platform</p>
+                </div>
+                <div class="period-location">
+                    <div>April 2023 – November 2023</div>
+                    <div>Healthcare Technology</div>
+                </div>
+            </div>
+            <p class="description">Redesigned multi-portal healthcare analytics platform serving 5,000+ medical practices.</p>
+            <ul class="highlights">
+                <li class="highlight-item">Led complete redesign of 4 interconnected web portals using React.js, migrating from legacy jQuery to maintainable React application</li>
+                <li class="highlight-item">Achieved 35% performance improvement through strategic code-splitting and optimization</li>
+                <li class="highlight-item">Spearheaded TypeScript migration across 50,000+ lines of codebase, reducing runtime errors by 60%</li>
+                <li class="highlight-item">Built reusable component library with 40+ React components, accelerating development velocity by 40%</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Ant Design</span>
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="experience-header">
+                <div class="role-company">
+                    <h3 class="role">Frontend Developer</h3>
+                    <p class="company">Clevision Technologies - React Admin Templates</p>
+                </div>
+                <div class="period-location">
+                    <div>October 2018 – January 2023</div>
+                    <div>Product Development</div>
+                </div>
+            </div>
+            <p class="description">Core engineering team for React admin dashboard product line.</p>
+            <ul class="highlights">
+                <li class="highlight-item">Engineered production-ready React admin templates achieving 4.8/5.0 rating from 300+ customer reviews</li>
+                <li class="highlight-item">Architected scalable component systems supporting complex dashboards with 100+ reusable components</li>
+                <li class="highlight-item">Built authentication systems with JWT and RBAC serving 2,000+ production deployments</li>
+                <li class="highlight-item">Mentored 3 junior frontend developers, improving team code quality by 35%</li>
+            </ul>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Material-UI</span>
+                <span class="tech-tag">JWT</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">Featured Projects</h2>
+
+        <div class="project-item">
+            <h3 class="project-title">Flooring Industry Marketplace Platform</h3>
+            <p class="description">All-in-one flooring platform connecting online experiences to in-store showrooms, enabling retailers and manufacturers to manage inventory, showcase products with 3D visualization, and streamline customer engagement across digital and physical retail channels.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">E-commerce Integration</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project-title">AI Healthcare Case Management</h3>
+            <p class="description">AI-powered legal case management platform reducing healthcare litigation review time by 85% through intelligent chronology generation and medical record visualization.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">AI/ML Integration</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project-title">AI Marketing Platform</h3>
+            <p class="description">Enterprise-grade campaign management SaaS with multimodal AI capabilities, serving 50,000+ marketing campaigns with real-time analytics.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Redux</span>
+                <span class="tech-tag">Cypress</span>
+                <span class="tech-tag">AI/ML Integration</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project-title">Healthcare Portal Suite</h3>
+            <p class="description">Multi-portal healthcare analytics platform serving 5,000+ medical practices with HIPAA compliance and 35% performance optimization.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Redux</span>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project-title">React Admin Templates</h3>
+            <p class="description">Production-ready admin dashboard templates with 4.8/5.0 rating from 300+ reviews, featuring 100+ reusable components and authentication systems.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Material-UI</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
